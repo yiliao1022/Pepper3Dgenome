@@ -33,4 +33,4 @@ Rscript bnbc.chr1.r
 for i in `ls *.csv`;do  perl MATCSV2TXT.pl $i 40000;done
 
 #5 Runing CALDER for subcomparments
-Rscript GR1.r
+Rscript GR1.calder.r
