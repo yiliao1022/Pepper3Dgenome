@@ -18,7 +18,7 @@ perl GetMat.pl LYJP2.Ca_59Chr03.tsv 7234 40000
 perl GetMat.pl LYJP2.Ca_59Chr04.tsv 6266 40000
 perl GetMat.pl LYJP2.Ca_59Chr05.tsv 6361 40000
 perl GetMat.pl LYJP2.Ca_59Chr06.tsv 6278 40000
-perl GetMat.pl LYJP2.Ca_59Chr07.tsv 6689 40000
+perl GetMat.pl LYJP2.Ca_59Chr07.tsv 6689 40000for i in `ls *.csv`;do  perl MATCSV2TXT.pl $i 40000;done
 perl GetMat.pl LYJP2.Ca_59Chr08.tsv 4351 40000
 perl GetMat.pl LYJP2.Ca_59Chr09.tsv 7006 40000
 perl GetMat.pl LYJP2.Ca_59Chr10.tsv 6212 40000
@@ -28,4 +28,9 @@ perl GetMat.pl LYJP2.Ca_59Chr12.tsv 6551 40000
 #3 Using bnbc for normalizing and batch correction
 
 Rscript bnbc.chr1.r
+
+#4 Convert the bnbc .csv output to a tab-delimited text format containing three columns for calling subcomparments using CALDER
+for i in `ls *.csv`;do  perl MATCSV2TXT.pl $i 40000;done
+
+#5 Runing CALDER for subcomparments
 
