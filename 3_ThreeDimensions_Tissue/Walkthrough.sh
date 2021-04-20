@@ -25,3 +25,7 @@ perl GetMat.pl LYJP2.Ca_59Chr10.tsv 6212 40000
 perl GetMat.pl LYJP2.Ca_59Chr11.tsv 6900 40000
 perl GetMat.pl LYJP2.Ca_59Chr12.tsv 6551 40000
 
+#3 Using bnbc for normalizing and batch correction
+
+Rscript bnbc.chr1.r
+
