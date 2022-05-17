@@ -18,11 +18,11 @@ wilcox.test(Frequency~Tissues, data = mydata2, paired = T)
 
 mydata3 <-distance %>% filter(Tissues=='YP1' | Tissues=='GR1') %>% filter (Distance=='Ratio')
 mydata3
-wilcox.test(Frequency~Tissues, data = mydata3)
+wilcox.test(Frequency~Tissues, data = mydata3, paired = T)
 
 mydata4 <-distance %>% filter(Tissues=='YP1' | Tissues=='TZ1') %>% filter (Distance=='Ratio')
 mydata4
-wilcox.test(Frequency~Tissues, data = mydata4)
+wilcox.test(Frequency~Tissues, data = mydata4, paired = T)
 
 #### For juicer HiCMap
 
