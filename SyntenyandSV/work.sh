@@ -8,5 +8,5 @@ sed -i 's/s E/s HQ.E/g' SL4.HQ.long.sort.maf
 ~/Softwares/linux.x86_64/mafToAxt SL4.RH89B.long.sort.maf SL4 RH89 SL4.RH89B.axt
 cat RH89B.chain.filter.tnet.synnet | grep 'net\|top\|inv\|syn\|non' | awk '$3>50000' > RH89B.chain.filter.tnet.synnet.bed
 cat HQ.chain.filter.tnet.synnet | grep 'net\|top\|inv\|syn\|non' | awk '$3>50000' > HQ.chain.filter.tnet.synnet.bed
-perl ../../GetSynBreaks.pl  RH89B.chain.filter.tnet.synnet.bed
-perl ../../GetSynBreaks.pl  HQ.chain.filter.tnet.synnet.bed
+perl ../../PairwiseSynteny.pl  RH89B.chain.filter.tnet.synnet.bed
+perl ../../PairwiseSynteny.pl  HQ.chain.filter.tnet.synnet.bed
